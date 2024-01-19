@@ -100,3 +100,9 @@ module.exports = async (req, res) => {
     });
   }
 };
+
+app.get("/test", (req, res) => {
+    res.send('Server is up and running');
+  });
+
+app.listen(4000);
